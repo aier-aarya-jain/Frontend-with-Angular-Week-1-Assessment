@@ -1,0 +1,110 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    color: #1a2540; 
+}
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .logo { font-size: 1.3rem; font-weight: bold; }
+
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul a { text-decoration: none; color: #555; font-size: 0.95rem; }
+    nav ul a:hover { color: #000; }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 16px; }
+    .hero p  { font-size: 1rem; color: #666; }
+
+    .team {
+      background: #f0f4f8;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .team h2 { font-size: 2rem; font-weight: bold; margin-bottom: 40px; }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    span {
+        color: #4a6cf7;
+        letter-spacing: 2px;
+        font-size: 2px ;
+        
+    }
+
+    img{
+        width: 70%;
+        height: auto;
+        border-radius: 50%;  
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 30px 24px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #4a6cf7;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+
+    .card h3 { font-size: 0.95rem; font-weight: bold; margin-bottom: 6px; }
+    .card p  { font-size: 0.75rem; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    footer {
+      background: #131929;
+      color: rgba(255,255,255,0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 24px 40px;
+    }
+
+    .footer-logo { color: white; font-weight: bold; font-size: 1.1rem; }
+    footer p { font-size: 0.8rem; }
+
+    footer ul { list-style: none; display: flex; gap: 20px; }
+    footer ul a { text-decoration: none; color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+    footer ul a:hover { color: white; }
+
+    @media (max-width: 600px) {
+      nav ul { display: none; }
+      .hero h1 { font-size: 1.8rem; }
+      footer { flex-direction: column; text-align: center; }
+      footer ul { justify-content: center; }
+    }
